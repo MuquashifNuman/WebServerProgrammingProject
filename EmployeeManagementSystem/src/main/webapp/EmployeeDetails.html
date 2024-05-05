@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Details</title>
+<style>
+	html { 
+ 				 background: url(LandingPageBg.jpg) no-repeat center center fixed; 
+  				 -webkit-background-size: cover;
+  				 -moz-background-size: cover;
+  				 -o-background-size: cover;
+  				 background-size: cover;
+		}
+	div{
+		text-align : center;
+	}
+	input[type=text], select, input[type=password], input[type=textbox], input[type=number], input[type=date] {
+				  width: 100%;
+				  padding: 12px 20px;
+				  margin: 8px 0;
+				  display: inline-block;
+				  border: 1px solid #ccc;
+				  border-radius: 4px;
+				  box-sizing: border-box;
+		}	
+		input[type=submit] {
+				  width: 50%;
+				  font-size : 20px;
+				  background-color: red;
+				  color: white;
+				  padding: 14px 20px;
+				  margin: 8px 0;
+				  border: 5px solid black;
+				  border-radius: 4px;
+				  cursor: pointer;
+		}
+		#backButton{
+			height : 10%;
+			width : 10%;
+		}
+</style>
+</head>
+<body>
+	<div>
+	<h1>Employee Details</h1>
+	<form action="http://localhost:8088/EmployeeManagementSystem/EmployeeDetails" method="POST">
+      <input type="text" placeholder="Search.." name="username">
+      <input type="submit" value="Get Employee Details"><br>
+      <br><a href="HomePage.html"><img id="backButton" src="backButton.jpg"/></a>
+     </div>
+</body>
+</html>

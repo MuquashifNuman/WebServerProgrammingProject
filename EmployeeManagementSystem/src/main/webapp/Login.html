@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+	<style>
+		html { 
+ 				 background: url(LandingPageBg.jpg) no-repeat center center fixed; 
+  				 -webkit-background-size: cover;
+  				 -moz-background-size: cover;
+  				 -o-background-size: cover;
+  				 background-size: cover;
+		}
+		div {
+  				 border-radius: 5px;
+				 background-color: white;
+				 padding: 10px;
+				 margin : 20px;
+				 
+		}
+		input[type=text], select, input[type=password], input[type=textbox], input[type=number], input[type=date] {
+				  width: 100%;
+				  padding: 10px 10px;
+				  margin: 8px 0;
+				  display: inline-block;
+				  border: 1px solid #ccc;
+				  border-radius: 4px;
+				  box-sizing: border-box;
+		}	
+		input[type=submit] {
+				  width: 100%;
+				  background-color: red;
+				  color: white;
+				  padding: 10px 10px;
+				  margin: 8px 0;
+				  border: 5px solid black;
+				  border-radius: 4px;
+				  cursor: pointer;
+		}
+		select {
+			font-family : candara ;
+			font-size: 20px;
+		}
+		h1{
+			text-align : center;
+			text-decoration-line: underline overline;
+ 			text-decoration-style: solid;
+ 		    text-decoration-color: red;
+ 		    letter-spacing: 5px;
+		}
+		.loginForm {
+			font-family : candara ;
+			font-size: 25px;
+		}
+		#backButton{
+			height : 10%;
+			width : 10%;
+		}
+	</style>
+</head>
+<body>
+	<div class="loginForm">
+	<form action="http://localhost:8088/EmployeeManagementSystem/login" method="POST">
+  		<h1>Login</h1>
+  		<label for="uname">User Name</label>
+  		<input type="text" id="uname" name="uname">
+  		<br>
+  		<br><label for="passwd">Password</label>
+  		<input type="password" id="passwd" name="passwd">
+  		<br>
+  		<br>
+  		<br><input type="submit" value="Login">
+  		<a href="LandingPage.html"><img id="backButton" src="backButton.jpg"/></a>
+  	</form>
+  	</div>
+</body>
+</html>
